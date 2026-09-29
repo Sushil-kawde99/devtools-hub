@@ -1,0 +1,7 @@
+# robots.txt for DevTools Hub
+# Replace https://YOUR_PROJECT.vercel.app with your live Vercel domain URL
+
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR_PROJECT.vercel.app/sitemap.xml
