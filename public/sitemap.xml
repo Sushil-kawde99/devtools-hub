@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace https://YOUR_PROJECT.vercel.app with your live Vercel domain URL -->
+<!-- Replace https://YOUR_PROJECT.vercel.app with your live domain URL -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://YOUR_PROJECT.vercel.app/</loc>

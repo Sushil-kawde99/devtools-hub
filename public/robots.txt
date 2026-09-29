@@ -1,5 +1,5 @@
 # robots.txt for DevTools Hub
-# Replace https://YOUR_PROJECT.vercel.app with your live Vercel domain URL
+# Replace https://YOUR_PROJECT.vercel.app with your live domain URL
 
 User-agent: *
 Allow: /
