@@ -41,9 +41,9 @@
       <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
         Crafted with passion for software engineers and web developers worldwide.
       </p>
-      <p style="font-size: 1rem; color: var(--primary); font-weight: 700;">
+      <!-- <p style="font-size: 1rem; color: var(--primary); font-weight: 700;">
         &#128222; +91 9975829531
-      </p>
+      </p> -->
     </div>
   </div>
 </div>

@@ -10,12 +10,12 @@
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://YOUR_PROJECT.vercel.app">
+    <meta property="og:url" content="https://devtools-hub.pages.dev">
     <meta property="og:title" content="@yield('title', 'DevTools Hub � Free Online Developer Tools')">
     <meta property="og:description" content="@yield('meta_description', 'Fast, simple, and privacy-friendly online developer tools.')">
     
     <!-- Canonical -->
-    <link rel="canonical" href="https://YOUR_PROJECT.vercel.app">
+    <link rel="canonical" href="https://devtools-hub.pages.dev">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

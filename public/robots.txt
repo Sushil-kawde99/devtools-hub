@@ -1,7 +1,5 @@
-# robots.txt for DevTools Hub
-# Replace https://YOUR_PROJECT.vercel.app with your live domain URL
-
+# robots.txt for DevTools Hub Cloudflare Pages
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR_PROJECT.vercel.app/sitemap.xml
+Sitemap: https://devtools-hub.pages.dev/sitemap.xml

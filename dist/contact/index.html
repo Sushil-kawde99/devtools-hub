@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DevTools Hub</title>
+    <meta name="description" content="Get in touch with DevTools Hub. Send feedback, report a tool bug, or suggest a new tool feature.">
+    <meta name="keywords" content="developer tools, json formatter, json validator, base64 encoder, url encoder, uuid generator, timestamp converter, text case converter, color converter, password generator">
+    <meta name="author" content="Sushil K. Kawde � DevTools Hub">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devtools-hub.pages.dev">
+    <meta property="og:title" content="Contact Us | DevTools Hub">
+    <meta property="og:description" content="Get in touch with DevTools Hub. Send feedback, report a tool bug, or suggest a new tool feature.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://devtools-hub.pages.dev">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="https://devtools-hub.pages.dev/favicon.svg">
+    <link rel="stylesheet" href="https://devtools-hub.pages.dev/css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="navbar-sticky">
+  <div class="container navbar-container">
+    <a href="https://devtools-hub.pages.dev" class="logo-brand">
+      <div class="logo-icon">&lt;/&gt;</div>
+      <span>DevTools Hub</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a href="https://devtools-hub.pages.dev" class="nav-link ">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/tools" class="nav-link ">
+            Tools
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/about" class="nav-link ">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/contact" class="nav-link active">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+      ?
+    </button>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="https://devtools-hub.pages.dev" class="nav-link ">Home</a></li>
+      <li><a href="https://devtools-hub.pages.dev/tools" class="nav-link ">All Tools</a></li>
+      <li><a href="https://devtools-hub.pages.dev/about" class="nav-link ">About Us</a></li>
+      <li><a href="https://devtools-hub.pages.dev/contact" class="nav-link active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+        <main class="main-content">
+            <div style="background: #FFFFFF; border-bottom: 1px solid var(--border-color); padding: 40px 0;">
+  <div class="container container-narrow">
+    <h1 style="font-size: 2.2rem; margin-bottom: 12px;">Contact & Feedback</h1>
+    <p style="color: var(--text-muted); font-size: 1.05rem;">
+      Have feedback or feature requests? Send us a message or call directly below.
+    </p>
+  </div>
+</div>
+
+<div class="container container-narrow" style="padding-top: 40px;">
+  <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; margin-bottom: 32px;" class="two-col-grid">
+    <div style="background: #FFFFFF; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+      <h3 style="margin-bottom: 16px;">Direct Contact</h3>
+      <p style="font-weight: 700; font-size: 1.1rem; color: var(--dark-navy); margin-bottom: 6px;">Sushil K. Kawde</p>
+      <!-- <p style="color: var(--primary); font-weight: 700; font-size: 1rem; margin-bottom: 8px;">
+        &#128222; <a href="tel:+919975829531" style="color: var(--primary);">+91 9975829531</a>
+      </p> -->
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">
+        ?? <a href="mailto:kawdes694@gmail.com" style="color: var(--primary);">kawdes694@gmail.com</a>
+      </p>
+      <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 12px;">
+        ?? Chhatrapati Sambhajinagar
+      </p>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">
+        GitHub: <a href="https://github.com/Sushil-kawde99/devtools-hub" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">@Sushil-kawde99</a>
+      </p>
+    </div>
+
+    <div style="background: #FFFFFF; padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+      <div id="contactSuccessAlert" class="alert alert-success" style="display: none; padding: 24px; text-align: center; flex-direction: column;">
+        <div style="font-size: 2rem; margin-bottom: 8px;">??</div>
+        <h3>Thank you for your message!</h3>
+        <p>We appreciate your feedback and will review your submission.</p>
+      </div>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input 
+            type="text" 
+            id="contactName"
+            className="code-textarea"
+            style="min-height: 48px; height: 48px; width: 100%; border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 0 16px;"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input 
+            type="email" 
+            id="contactEmail"
+            className="code-textarea"
+            style="min-height: 48px; height: 48px; width: 100%; border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 0 16px;"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Message / Tool Request</label>
+          <textarea 
+            id="contactMessage"
+            class="code-textarea"
+            rows="5"
+            placeholder="Describe your suggestion or tool issue..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          ?? Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+        </main>
+
+        <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&lt;/&gt; DevTools Hub</h3>
+        <p>
+          Fast, simple, and privacy-friendly online developer tools. All processing happens 100% locally in your browser � no server uploads.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev/tools/json-formatter">JSON Formatter</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/json-validator">JSON Validator</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/base64">Base64 Encoder</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/uuid-generator">UUID Generator</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/password-generator">Password Generator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev">Home</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools">All Tools</a></li>
+          <li><a href="https://devtools-hub.pages.dev/about">About Us</a></li>
+          <li><a href="https://devtools-hub.pages.dev/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Privacy & Legal</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev/privacy">Privacy Policy</a></li>
+          <li><a href="https://devtools-hub.pages.dev/terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>� 2026 DevTools Hub. Built with ?? by <span style="color: var(--cyan); font-weight: 700;">Sushil K. Kawde</span>.</div>
+      <div>?? 100% Client-Side & Privacy First</div>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="https://devtools-hub.pages.dev/js/app.js"></script>
+</body>
+</html>

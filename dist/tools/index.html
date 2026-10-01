@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Developer Tools | DevTools Hub</title>
+    <meta name="description" content="Browse all 10 free online developer tools: JSON formatter, validator, Base64 encoder, UUID generator, password generator, color converter and more.">
+    <meta name="keywords" content="developer tools, json formatter, json validator, base64 encoder, url encoder, uuid generator, timestamp converter, text case converter, color converter, password generator">
+    <meta name="author" content="Sushil K. Kawde � DevTools Hub">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devtools-hub.pages.dev">
+    <meta property="og:title" content="All Developer Tools | DevTools Hub">
+    <meta property="og:description" content="Browse all 10 free online developer tools: JSON formatter, validator, Base64 encoder, UUID generator, password generator, color converter and more.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://devtools-hub.pages.dev">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="https://devtools-hub.pages.dev/favicon.svg">
+    <link rel="stylesheet" href="https://devtools-hub.pages.dev/css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="navbar-sticky">
+  <div class="container navbar-container">
+    <a href="https://devtools-hub.pages.dev" class="logo-brand">
+      <div class="logo-icon">&lt;/&gt;</div>
+      <span>DevTools Hub</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a href="https://devtools-hub.pages.dev" class="nav-link ">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/tools" class="nav-link active">
+            Tools
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/about" class="nav-link ">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/contact" class="nav-link ">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+      ?
+    </button>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="https://devtools-hub.pages.dev" class="nav-link ">Home</a></li>
+      <li><a href="https://devtools-hub.pages.dev/tools" class="nav-link active">All Tools</a></li>
+      <li><a href="https://devtools-hub.pages.dev/about" class="nav-link ">About Us</a></li>
+      <li><a href="https://devtools-hub.pages.dev/contact" class="nav-link ">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+        <main class="main-content">
+            <div style="background: #FFFFFF; border-bottom: 1px solid var(--border-color); padding: 40px 0;">
+  <div class="container">
+    <h1 style="font-size: 2.2rem; margin-bottom: 12px;">Developer Tools Directory</h1>
+    <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 600px; margin-bottom: 24px;">
+      Browse our complete collection of privacy-friendly, browser-based web tools.
+    </p>
+
+    <div style="max-width: 500px;">
+      <input 
+        type="text" 
+        id="toolSearchInput"
+        className="code-textarea"
+        style="width: 100%; min-height: 48px; height: 48px; font-size: 1rem; padding: 0 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);"
+        placeholder="?? Search tools by name, keyword, or tag..."
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container" style="padding-top: 40px;">
+  <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 16px; margin-bottom: 32px;" id="categoryFilterContainer">
+          <button 
+        class="btn btn-sm category-filter-btn btn-primary"
+        data-category="All"
+      >
+        All
+      </button>
+          <button 
+        class="btn btn-sm category-filter-btn btn-secondary"
+        data-category="JSON"
+      >
+        JSON
+      </button>
+          <button 
+        class="btn btn-sm category-filter-btn btn-secondary"
+        data-category="Encoding"
+      >
+        Encoding
+      </button>
+          <button 
+        class="btn btn-sm category-filter-btn btn-secondary"
+        data-category="URL"
+      >
+        URL
+      </button>
+          <button 
+        class="btn btn-sm category-filter-btn btn-secondary"
+        data-category="Generator"
+      >
+        Generator
+      </button>
+          <button 
+        class="btn btn-sm category-filter-btn btn-secondary"
+        data-category="Converter"
+      >
+        Converter
+      </button>
+          <button 
+        class="btn btn-sm category-filter-btn btn-secondary"
+        data-category="Text"
+      >
+        Text
+      </button>
+          <button 
+        class="btn btn-sm category-filter-btn btn-secondary"
+        data-category="Security"
+      >
+        Security
+      </button>
+      </div>
+
+  <div class="tools-grid" id="toolsListGrid">
+          <div class="tool-card" data-category="JSON" data-tags="json format prettify minify beautify">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">{ }</div>
+      <div style="display: flex; gap: 6px;">
+                  <span class="badge badge-cyan">Popular</span>
+                <span class="badge badge-primary">JSON</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">JSON Formatter</h3>
+    <p class="tool-card-desc">Format, prettify, minify, and validate JSON data instantly with character count and file download.</p>
+  </div>
+
+  <a href="/tools/json-formatter" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="JSON" data-tags="json validate check syntax error">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">?</div>
+      <div style="display: flex; gap: 6px;">
+                  <span class="badge badge-cyan">Popular</span>
+                <span class="badge badge-primary">JSON</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">JSON Validator</h3>
+    <p class="tool-card-desc">Validate JSON syntax and pinpoint exact syntax error lines and columns with instant status.</p>
+  </div>
+
+  <a href="/tools/json-validator" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="Encoding" data-tags="base64 encode decode binary string">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                  <span class="badge badge-cyan">Popular</span>
+                <span class="badge badge-primary">Encoding</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">Base64 Encoder / Decoder</h3>
+    <p class="tool-card-desc">Encode plain text to Base64 format or decode Base64 strings back into original text locally.</p>
+  </div>
+
+  <a href="/tools/base64" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="URL" data-tags="url encode uri percent-encoding">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                <span class="badge badge-primary">URL</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">URL Encoder</h3>
+    <p class="tool-card-desc">Convert special characters and spaces into URL-safe percent-encoded format.</p>
+  </div>
+
+  <a href="/tools/url-encoder" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="URL" data-tags="url decode uri query-params">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                <span class="badge badge-primary">URL</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">URL Decoder</h3>
+    <p class="tool-card-desc">Decode percent-encoded URL parameters back into human-readable text.</p>
+  </div>
+
+  <a href="/tools/url-decoder" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="Generator" data-tags="uuid guid v4 random generator">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                  <span class="badge badge-cyan">Popular</span>
+                <span class="badge badge-primary">Generator</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">UUID Generator</h3>
+    <p class="tool-card-desc">Generate version 4 UUIDs (Universally Unique Identifiers) individually or in bulk.</p>
+  </div>
+
+  <a href="/tools/uuid-generator" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="Converter" data-tags="timestamp unix epoch date converter">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                  <span class="badge badge-cyan">Popular</span>
+                <span class="badge badge-primary">Converter</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">Timestamp Converter</h3>
+    <p class="tool-card-desc">Convert Unix epoch timestamps (seconds/milliseconds) to human-readable dates and vice versa.</p>
+  </div>
+
+  <a href="/tools/timestamp" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="Text" data-tags="text case uppercase lowercase camelcase snake_case">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                <span class="badge badge-primary">Text</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">Text Case Converter</h3>
+    <p class="tool-card-desc">Convert text between UPPERCASE, lowercase, camelCase, PascalCase, snake_case, kebab-case, and Title Case.</p>
+  </div>
+
+  <a href="/tools/text-case" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="Converter" data-tags="color hex rgb hsl converter picker">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                  <span class="badge badge-cyan">Popular</span>
+                <span class="badge badge-primary">Converter</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">Color Converter</h3>
+    <p class="tool-card-desc">Convert color values seamlessly between HEX, RGB, and HSL with a live preview palette.</p>
+  </div>
+
+  <a href="/tools/color-converter" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+          <div class="tool-card" data-category="Security" data-tags="password security generator random hash">
+  <div>
+    <div class="tool-card-header">
+      <div class="tool-icon">??</div>
+      <div style="display: flex; gap: 6px;">
+                  <span class="badge badge-cyan">Popular</span>
+                <span class="badge badge-primary">Security</span>
+      </div>
+    </div>
+
+    <h3 class="tool-card-title">Password Generator</h3>
+    <p class="tool-card-desc">Generate customizable, strong, cryptographically secure passwords locally in your browser.</p>
+  </div>
+
+  <a href="/tools/password-generator" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 16px;">
+    Open Tool ?
+  </a>
+</div>
+      </div>
+
+  <div id="noToolsFoundMsg" style="display: none; text-align: center; padding: 60px 0; color: var(--text-muted);">
+    <h3>No tools found matching your query</h3>
+    <p>Try searching for another keyword or reset category filter.</p>
+    <button class="btn btn-secondary btn-sm" id="resetFiltersBtn" style="margin-top: 16px;">
+      Reset Filters
+    </button>
+  </div>
+</div>
+        </main>
+
+        <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&lt;/&gt; DevTools Hub</h3>
+        <p>
+          Fast, simple, and privacy-friendly online developer tools. All processing happens 100% locally in your browser � no server uploads.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev/tools/json-formatter">JSON Formatter</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/json-validator">JSON Validator</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/base64">Base64 Encoder</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/uuid-generator">UUID Generator</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/password-generator">Password Generator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev">Home</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools">All Tools</a></li>
+          <li><a href="https://devtools-hub.pages.dev/about">About Us</a></li>
+          <li><a href="https://devtools-hub.pages.dev/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Privacy & Legal</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev/privacy">Privacy Policy</a></li>
+          <li><a href="https://devtools-hub.pages.dev/terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>� 2026 DevTools Hub. Built with ?? by <span style="color: var(--cyan); font-weight: 700;">Sushil K. Kawde</span>.</div>
+      <div>?? 100% Client-Side & Privacy First</div>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="https://devtools-hub.pages.dev/js/app.js"></script>
+</body>
+</html>

@@ -18,11 +18,17 @@
     <div style="background: #FFFFFF; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
       <h3 style="margin-bottom: 16px;">Direct Contact</h3>
       <p style="font-weight: 700; font-size: 1.1rem; color: var(--dark-navy); margin-bottom: 6px;">Sushil K. Kawde</p>
-      <p style="color: var(--primary); font-weight: 700; font-size: 1rem; margin-bottom: 16px;">
+      <!-- <p style="color: var(--primary); font-weight: 700; font-size: 1rem; margin-bottom: 8px;">
         &#128222; <a href="tel:+919975829531" style="color: var(--primary);">+91 9975829531</a>
+      </p> -->
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">
+        ?? <a href="mailto:kawdes694@gmail.com" style="color: var(--primary);">kawdes694@gmail.com</a>
       </p>
-      <p style="font-size: 0.875rem; color: var(--text-muted);">
-        Available for tool feedback, feature requests, and developer collaboration.
+      <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 12px;">
+        ?? Chhatrapati Sambhajinagar
+      </p>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">
+        GitHub: <a href="https://github.com/Sushil-kawde99/devtools-hub" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">@Sushil-kawde99</a>
       </p>
     </div>
 

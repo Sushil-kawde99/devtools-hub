@@ -1,0 +1,5 @@
+# robots.txt for DevTools Hub Cloudflare Pages
+User-agent: *
+Allow: /
+
+Sitemap: https://devtools-hub.pages.dev/sitemap.xml

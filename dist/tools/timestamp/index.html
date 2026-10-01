@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unix Timestamp Converter | DevTools Hub</title>
+    <meta name="description" content="Convert Unix epoch timestamps (seconds/milliseconds) to human-readable date &amp; time string formats.">
+    <meta name="keywords" content="developer tools, json formatter, json validator, base64 encoder, url encoder, uuid generator, timestamp converter, text case converter, color converter, password generator">
+    <meta name="author" content="Sushil K. Kawde � DevTools Hub">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devtools-hub.pages.dev">
+    <meta property="og:title" content="Unix Timestamp Converter | DevTools Hub">
+    <meta property="og:description" content="Convert Unix epoch timestamps (seconds/milliseconds) to human-readable date &amp; time string formats.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://devtools-hub.pages.dev">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="https://devtools-hub.pages.dev/favicon.svg">
+    <link rel="stylesheet" href="https://devtools-hub.pages.dev/css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="navbar-sticky">
+  <div class="container navbar-container">
+    <a href="https://devtools-hub.pages.dev" class="logo-brand">
+      <div class="logo-icon">&lt;/&gt;</div>
+      <span>DevTools Hub</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a href="https://devtools-hub.pages.dev" class="nav-link ">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/tools" class="nav-link active">
+            Tools
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/about" class="nav-link ">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="https://devtools-hub.pages.dev/contact" class="nav-link ">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Toggle -->
+    <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+      ?
+    </button>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="https://devtools-hub.pages.dev" class="nav-link ">Home</a></li>
+      <li><a href="https://devtools-hub.pages.dev/tools" class="nav-link active">All Tools</a></li>
+      <li><a href="https://devtools-hub.pages.dev/about" class="nav-link ">About Us</a></li>
+      <li><a href="https://devtools-hub.pages.dev/contact" class="nav-link ">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+        <main class="main-content">
+            <div class="tool-header-section">
+  <div class="container">
+    <div style="margin-bottom: 12px;">
+      <a href="https://devtools-hub.pages.dev/tools" style="font-size: 0.875rem; color: var(--text-muted);">
+        ? Back to All Tools
+      </a>
+    </div>
+
+    <div class="tool-title-row">
+      <h1 class="tool-page-title">Unix Timestamp Converter</h1>
+              <span class="badge badge-primary">Converter</span>
+          </div>
+
+    <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 750px;">
+      Convert Unix epoch timestamps (seconds/milliseconds) to human-readable date &amp; time string formats.
+    </p>
+
+    <div class="privacy-banner">
+      <span>???</span>
+      <span>All processing happens 100% locally in your browser. No data is ever sent to a server.</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div style="background: linear-gradient(135deg, var(--dark-navy) 0%, #1E1B4B 100%); color: #FFFFFF; padding: 24px; border-radius: var(--radius-md); margin-bottom: 32px; display: flex; align-items: center; justify-space-between; flex-wrap: wrap; gap: 16px;">
+    <div>
+      <span style="font-size: 0.85rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em;">Current Unix Epoch Timestamp</span>
+      <h2 style="font-size: 2rem; font-family: var(--font-mono); color: var(--cyan);" id="liveCurrentTimestampDisplay">0</h2>
+    </div>
+    <button type="button" class="btn btn-cyan btn-sm copy-trigger-btn" data-target="liveCurrentTimestampDisplay">?? Copy Current Timestamp</button>
+  </div>
+
+  <div class="two-col-grid">
+    <div style="background: #FFFFFF; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+      <h3 style="margin-bottom: 16px;">Unix Timestamp ? Human Readable Date</h3>
+      
+      <div class="form-group">
+        <label class="form-label">Enter Timestamp (Seconds or MS)</label>
+        <input 
+          type="text"
+          id="unixToDateInput"
+          class="code-textarea"
+          style="min-height: 48px; height: 48px;"
+          placeholder="e.g. 1700000000"
+        />
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+        <div>
+          <span class="stats-badge">UTC Format:</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-main); padding: 10px 14px; border-radius: var(--radius-sm); margin-top: 4px;">
+            <span style="font-family: var(--font-mono); font-size: 0.9rem;" id="resUtcFormat">-</span>
+            <button type="button" class="btn btn-secondary btn-sm copy-trigger-btn" data-target="resUtcFormat">?? Copy</button>
+          </div>
+        </div>
+
+        <div>
+          <span class="stats-badge">Local Time:</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-main); padding: 10px 14px; border-radius: var(--radius-sm); margin-top: 4px;">
+            <span style="font-family: var(--font-mono); font-size: 0.9rem;" id="resLocalFormat">-</span>
+            <button type="button" class="btn btn-secondary btn-sm copy-trigger-btn" data-target="resLocalFormat">?? Copy</button>
+          </div>
+        </div>
+
+        <div>
+          <span class="stats-badge">ISO 8601:</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-main); padding: 10px 14px; border-radius: var(--radius-sm); margin-top: 4px;">
+            <span style="font-family: var(--font-mono); font-size: 0.9rem;" id="resIsoFormat">-</span>
+            <button type="button" class="btn btn-secondary btn-sm copy-trigger-btn" data-target="resIsoFormat">?? Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+      <h3 style="margin-bottom: 16px;">Date & Time ? Unix Timestamp</h3>
+
+      <div class="form-group">
+        <label class="form-label">Select Date & Time</label>
+        <input 
+          type="datetime-local"
+          id="dateToUnixInput"
+          class="code-textarea"
+          style="min-height: 48px; height: 48px;"
+        />
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+        <div>
+          <span class="stats-badge">Unix Seconds:</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-main); padding: 10px 14px; border-radius: var(--radius-sm); margin-top: 4px;">
+            <span style="font-family: var(--font-mono); font-size: 1rem; font-weight: 700; color: var(--primary);" id="resUnixSeconds">-</span>
+            <button type="button" class="btn btn-secondary btn-sm copy-trigger-btn" data-target="resUnixSeconds">?? Copy</button>
+          </div>
+        </div>
+
+        <div>
+          <span class="stats-badge">Unix Milliseconds:</span>
+          <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-main); padding: 10px 14px; border-radius: var(--radius-sm); margin-top: 4px;">
+            <span style="font-family: var(--font-mono); font-size: 0.95rem;" id="resUnixMs">-</span>
+            <button type="button" class="btn btn-secondary btn-sm copy-trigger-btn" data-target="resUnixMs">?? Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </main>
+
+        <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&lt;/&gt; DevTools Hub</h3>
+        <p>
+          Fast, simple, and privacy-friendly online developer tools. All processing happens 100% locally in your browser � no server uploads.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev/tools/json-formatter">JSON Formatter</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/json-validator">JSON Validator</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/base64">Base64 Encoder</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/uuid-generator">UUID Generator</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools/password-generator">Password Generator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev">Home</a></li>
+          <li><a href="https://devtools-hub.pages.dev/tools">All Tools</a></li>
+          <li><a href="https://devtools-hub.pages.dev/about">About Us</a></li>
+          <li><a href="https://devtools-hub.pages.dev/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Privacy & Legal</h4>
+        <ul class="footer-links">
+          <li><a href="https://devtools-hub.pages.dev/privacy">Privacy Policy</a></li>
+          <li><a href="https://devtools-hub.pages.dev/terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>� 2026 DevTools Hub. Built with ?? by <span style="color: var(--cyan); font-weight: 700;">Sushil K. Kawde</span>.</div>
+      <div>?? 100% Client-Side & Privacy First</div>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="https://devtools-hub.pages.dev/js/app.js"></script>
+</body>
+</html>
